@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif; /* Set font-family */
+            color: #333; /* Dark gray text color */
+            padding: 20px; /* Add some padding for better readability */
+        }
+        h1 {
+            color: #0066cc; /* Blue color for heading */
+        }
+        p {
+            font-size: 18px; /* Larger font size for paragraphs */
+        }
+        a {
+            color: #009900; /* Green color for links */
+            text-decoration: none; /* Remove underline from links */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, Medius Technologies!</h1>
+    <p>(This project allows users to send emails directly from the web application. Click below to use the email functionality.)</p>
+    <p><a href="{% url 'send-email' %}">Send Email</a></p>
+</body>
+</html>
